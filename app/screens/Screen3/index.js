@@ -5,7 +5,7 @@ import Next from '../../assets/next.png';
 
 import styles from './styles';
 
-const Home = props => {
+const Home = () => {
   const initialValue = [
     {
       checked: require('../../assets/checked.png'),
@@ -34,8 +34,8 @@ const Home = props => {
         <Text style={styles.skipText}>Skip</Text>
       </View>
       <View style={styles.subContainer}>
-        <Text style={styles.holaText}>Hola!</Text>
-        <Text style={styles.holaText}>I am your assistant.</Text>
+        <Text style={styles.holaText}>Screen 3!</Text>
+        <Text style={styles.holaText}>This is your third screen.</Text>
         <Text style={[styles.assistText, { marginTop: 20 }]}>
           To assist you all part of your body.
         </Text>
@@ -63,9 +63,7 @@ const Home = props => {
             </View>
           ))}
         </ScrollView>
-        <TouchableOpacity
-          style={styles.continueBtnContainer}
-          onPress={() => props.navigation.navigate('Screen2')}>
+        <TouchableOpacity style={styles.continueBtnContainer}>
           <Text>Continue</Text>
           <Image source={Next} style={styles.nextIconText} />
         </TouchableOpacity>

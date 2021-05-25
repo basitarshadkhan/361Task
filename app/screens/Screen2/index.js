@@ -34,8 +34,8 @@ const Home = props => {
         <Text style={styles.skipText}>Skip</Text>
       </View>
       <View style={styles.subContainer}>
-        <Text style={styles.holaText}>Hola!</Text>
-        <Text style={styles.holaText}>I am your assistant.</Text>
+        <Text style={styles.holaText}>Screen 2!</Text>
+        <Text style={styles.holaText}>This is your second screen.</Text>
         <Text style={[styles.assistText, { marginTop: 20 }]}>
           To assist you all part of your body.
         </Text>
@@ -65,7 +65,7 @@ const Home = props => {
         </ScrollView>
         <TouchableOpacity
           style={styles.continueBtnContainer}
-          onPress={() => props.navigation.navigate('Screen2')}>
+          onPress={() => props.navigation.navigate('Screen3')}>
           <Text>Continue</Text>
           <Image source={Next} style={styles.nextIconText} />
         </TouchableOpacity>
